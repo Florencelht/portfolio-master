@@ -1,0 +1,20 @@
+{
+  "short_name": "Florence Li",
+  "name": "Design Portfolio of Florence Li",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#111111",
+  "background_color": "#111111",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}

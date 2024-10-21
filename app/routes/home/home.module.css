@@ -1,0 +1,21 @@
+.home {
+  overflow-x: hidden;
+}
+
+.reading{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 210px;
+  font-size: 60px;
+}
+
+.skills{
+  margin-top: 40px;
+}
+
+.skillhead{
+  display: flex;
+  justify-content: start;
+  margin-left: 190px;
+  font-size: 60px;
+}

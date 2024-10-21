@@ -1,0 +1,139 @@
+/* Box with white background, larger size and more margin */
+.box {
+  background-color: white;
+  width: 400px; /* Set larger width */
+  padding: 40px; /* Increase padding */
+  border-radius: 10px;
+  margin-left: 170px; /* Auto margin to center the box horizontally */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease, padding 0.5s ease, margin 0.5s ease; /* Smooth background and padding transition */
+  display: inline-flex; /* Use flexbox to center items */
+  flex-direction: column; /* Arrange content vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  position: relative; /* To position the title */
+}
+
+/* When the box is hovered, change its background color */
+.box:hover {
+  background-color: #8b909c; /* Change background color on hover */
+}
+
+.book-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 800px; /* Increase perspective for more 3D effect */
+  margin-bottom: 20px; /* Add space between the book and the title */
+}
+
+/* Initial animation for the book */
+@keyframes initAnimation {
+  0% {
+    transform: rotateY(-36deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.book {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 1s ease, box-shadow 1s ease, width 0.5s ease, height 0.5s ease;
+  animation: 1s ease 0s 1 initAnimation;
+}
+
+.bookTitle{
+  font-weight: 300;
+  color: white;
+  font-size: 23px;
+}
+
+/* Hover effect on the book to make it smaller */
+.box:hover .book {
+  transform: rotateY(-36deg) scale(0.7); /* Rotate and shrink the book */
+  box-shadow: -15px 20px 30px rgba(0, 0, 0, 0.3), -10px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Front cover of the book */
+.book > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #01060f;
+  width: 200px;
+  height: 300px;
+  transform: translateZ(25px); /* Front cover thickness */
+  border-radius: 0 5px 5px 0;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+}
+
+/* Book spine */
+.book::before {
+  position: absolute;
+  content: '';
+  background-color: blue;
+  left: 0;
+  top: 4px;
+  width: 48px;
+  height: 292px;
+  transform: translateX(171px) rotateY(90deg); /* Spine element */
+  background: linear-gradient(90deg, 
+    #fff 0%,
+    #f9f9f9 5%,
+    #fff 10%,
+    #f9f9f9 15%,
+    #fff 20%,
+    #f9f9f9 25%,
+    #fff 30%,
+    #f9f9f9 35%,
+    #fff 40%,
+    #f9f9f9 45%,
+    #fff 50%,
+    #f9f9f9 55%,
+    #fff 60%,
+    #f9f9f9 65%,
+    #fff 70%,
+    #f9f9f9 75%,
+    #fff 80%,
+    #f9f9f9 85%,
+    #fff 90%,
+    #f9f9f9 95%,
+    #fff 100%
+  ); /* Spine gradient to mimic book pages */
+}
+
+/* Back cover of the book */
+.book::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 200px;
+  height: 300px;
+  transform: translateZ(-25px); /* Back cover thickness */
+  background-color: #01060f;
+  border-radius: 0 5px 5px 0;
+  box-shadow: -10px 0 50px 10px rgba(0, 0, 0, 0.5); /* Shadow for the back cover */
+}
+
+/* Book title, hidden by default */
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center; /* Center the title text */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.5s ease;
+}
+
+/* Show title when box is hovered */
+.box:hover .book-title {
+  opacity: 1; /* Fade in title on hover */
+}
