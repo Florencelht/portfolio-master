@@ -76,7 +76,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 <Image
                   reveal
                   delay={100}
-                  placeholder={profileImgPlaceholder}
+                  placeholder={ProfileImg}
                   srcSet={`${ProfileImg} 480w, ${ProfileImg} 960w`}
                   width={960}
                   height={1280}
