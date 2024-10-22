@@ -68,6 +68,7 @@ export function IconCloud({ iconSlugs }) {
 
   const renderedIcons = useMemo(() => {
     if (!data) return null;
+    console.log(requestAnimationFrame);
 
     return Object.values(data.simpleIcons).map((icon) =>
       renderCustomIcon(icon, theme || "light")
