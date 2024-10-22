@@ -7,6 +7,7 @@ import {
   fetchSimpleIcons,
   renderSimpleIcon,
 } from "react-icon-cloud";
+console.log(Cloud);
 
 // Define Cloud props
 const cloudProps = {
