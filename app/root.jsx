@@ -102,9 +102,9 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"></link>
-        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png"></link>
-        <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon"/>
+        <link rel="icon" type="./assets/favicon-16x16.png" sizes="16x16" href="/favicon-16x16.png"></link>
+        <link rel="icon" href="./assets/favicon-32x32.png" sizes="32x32" type="image/png"></link>
+        <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
         {/* Theme color doesn't support oklch so I'm hard coding these hexes for now */}
         <meta name="theme-color" content={theme === 'dark' ? '#111' : '#F2F2F2'} />
@@ -149,8 +149,8 @@ export function ErrorBoundary() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"></link>
-        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png"></link>
-        <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon"/>
+        <link rel="icon" href="./assets/favicon-32x32.png" sizes="32x32" type="image/png"></link>
+        <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
         <meta name="theme-color" content="#111" />
         <meta name="color-scheme" content="dark light" />
         <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
