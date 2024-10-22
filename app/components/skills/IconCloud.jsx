@@ -63,6 +63,7 @@ export function IconCloud({ iconSlugs }) {
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
+    console.log('Component mounted');
   }, [iconSlugs]);
 
   const renderedIcons = useMemo(() => {
@@ -78,4 +79,5 @@ export function IconCloud({ iconSlugs }) {
       {renderedIcons}
     </Cloud>
   );
+  
 }
