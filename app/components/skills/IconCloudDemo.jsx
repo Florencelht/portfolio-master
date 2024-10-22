@@ -1,7 +1,7 @@
 import {IconCloud} from "./IconCloud";
  
 const slugs = [
-  "react","postgresql", "javascript", "typescript", "css", "html5","nodedotjs","express","github","git","figma","amazonaws","python","nextdotjs","docker","visualstudiocode","vue-dot-js"
+  "react","postgresql", "javascript", "typescript", "css3", "html5","nodedotjs","express","github","git","figma","amazonaws","python","nextdotjs","docker","visualstudiocode","vue-dot-js"
 ];
  
 export function IconCloudDemo() {

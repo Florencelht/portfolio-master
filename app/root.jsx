@@ -103,7 +103,6 @@ export default function App() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://img.icons8.com/?size=100&id=OeuhdvhfDwcF&format=png&color=000000" type="image/png"/>
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
         {/* Theme color doesn't support oklch so I'm hard coding these hexes for now */}
         <meta name="theme-color" content={theme === 'dark' ? '#111' : '#F2F2F2'} />
         <meta
