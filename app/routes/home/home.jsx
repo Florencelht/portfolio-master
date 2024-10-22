@@ -15,7 +15,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './home.module.css';
 import {Book} from '~/components/books/books';
 import { Heading } from '~/components/heading';
-import { IconCloud } from "~/components/skills/IconCloud";
+import { IconCloudDemo } from "~/components/skills/IconCloudDemo";
 
 
 // Prefetch draco decoader wasm
@@ -178,7 +178,7 @@ export const Home = () => {
   </div>
   <div className={styles.skills}>
   <Heading className={styles.skillhead}>My Skills</Heading>
-  <IconCloud iconSlugs={["react","postgresql", "javascript", "typescript", "css", "html5","nodedotjs","express","github","git","figma","amazonaws","python","nextdotjs","docker","visualstudiocode","vue-dot-js"]} />
+  <IconCloudDemo/>
   </div>
       <Footer />
     </div>

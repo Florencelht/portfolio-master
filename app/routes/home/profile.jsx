@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
 import ProfileImg from '~/assets/DSCF1657.jpg';
 import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
