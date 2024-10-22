@@ -36,6 +36,7 @@ const cloudProps = {
   },
 };
 
+
 // Render custom icon with theme support
 const renderCustomIcon = (icon, theme) => {
   const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
@@ -61,10 +62,13 @@ const renderCustomIcon = (icon, theme) => {
 export function IconCloud({ iconSlugs }) {
   const [data, setData] = useState(null);
   const { theme } = useTheme();
-
+  const [isReady, setIsReady] = useState(false); // 用来管理是否准备好渲染
   useEffect(() => {
-    fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
-    console.log('Component mounted');
+    fetchSimpleIcons({ slugs: iconSlugs }).then((iconsData) => {
+      setData(iconsData);
+      setIsReady(true); // 标记为准备就绪
+      console.log('Component mounted and data fetched');
+    });
   }, [iconSlugs]);
 
   const renderedIcons = useMemo(() => {
@@ -75,7 +79,7 @@ export function IconCloud({ iconSlugs }) {
       renderCustomIcon(icon, theme || "light")
     );
   }, [data, theme]);
-
+  if (!isReady) return <div>Loading...</div>;
   return (
     <Cloud {...cloudProps}>
       {renderedIcons}
