@@ -16,6 +16,8 @@ import styles from './home.module.css';
 import {Book} from '~/components/books/books';
 import { Heading } from '~/components/heading';
 import { IconCloudDemo } from "~/components/skills/IconCloudDemo";
+import { CoolModeDemo } from '~/components/momo/CoolModeDemo';
+import { Text } from '~/components/text';
 
 
 // Prefetch draco decoader wasm
@@ -180,6 +182,12 @@ export const Home = () => {
   <Heading className={styles.skillhead}>My Skills</Heading>
   <IconCloudDemo/>
   </div>
+
+  <div className={styles.btn}>
+    <CoolModeDemo/>
+  </div>
+      <Heading className={styles.touch}>Get In Touch</Heading>
+      <Text className={styles.subtitle}>Want to chat? Just shoot me a dm! and I'll respond whenever I can.</Text>
       <Footer />
     </div>
   );
