@@ -20,6 +20,7 @@
     "@remix-run/cloudflare": "^2.7.1",
     "@remix-run/cloudflare-pages": "^2.7.1",
     "@remix-run/react": "^2.7.1",
+    "aws-sdk": "^2.1691.0",
     "framer-motion": "^11.0.5",
     "isbot": "^4.1.0",
     "miniflare": "^3.20231030.4",
