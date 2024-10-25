@@ -21,7 +21,7 @@
 }
 
 .btn{
-  margin-top: 170px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
 }
@@ -37,4 +37,38 @@
   justify-content: center;
   margin-top: 20px;
   font-size: 30px;
+  white-space: normal; /* 允许文字换行 */
+  word-wrap: break-word; /* 在单词长于容器宽度时换行 */
+  overflow-wrap: break-word;
+}
+
+.mlb{
+  margin-left: 20px;
+}
+
+@media (min-width: 1200px) and (max-width: 1597px) {
+  .subtitle {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 988px) and (max-width: 1200px) {
+  .subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 988px) {
+  .subtitle {
+    font-size: 17px;
+  }
+}
+
+@media(max-width: 834px){
+  .subtitle {
+    font-size: 17px;
+  }
+  .mlb{
+    margin-left: 100px;
+  }
 }

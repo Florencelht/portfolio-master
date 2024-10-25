@@ -1,0 +1,153 @@
+
+.bgNeutral50 {
+    background-color: #fafafa;
+  }
+  
+  .px4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .py12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .h20 {
+    height: 10rem;
+  }
+  
+  
+  .maxW7xl {
+    max-width: 80rem;
+  }
+
+  .mt2{
+    margin-top: 40px;
+  }
+  
+  .mxAuto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .divideY {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+  
+  .divideNeutral900 {
+    border-color: #212121;
+  }
+  
+  .border{
+    border: 0.3px solid #212121;  
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .gridCols2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gridCols4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .gridCols3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .textXl {
+    font-size: 1.25rem;
+  }
+  
+  .smText3xl {
+    font-size: 1.875rem;
+  }
+  
+  .mdText4xl {
+    font-size: 2.25rem;
+  }
+  
+  .roundedLg {
+    border-radius: 0.5rem;
+  }
+  
+  .placeContentCenter {
+    place-content: center;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .inset0 {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .bgNeutral900 {
+    background-color: #212121;
+  }
+  
+  .textWhite {
+    color: white;
+  }
+  
+
+  @media (max-width: 640px) {
+    .px4 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  
+    .py12 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  
+    .h20 {
+      height: 6rem; /* 将高度减少 */
+    }
+  
+    .textXl {
+      font-size: 1rem; /* 缩小文字大小 */
+    }
+  
+    .gridCols2 {
+      grid-template-columns: repeat(1, 1fr); /* 一列布局 */
+    }
+  
+    .gridCols4 {
+      grid-template-columns: repeat(2, 1fr); /* 调整为两列布局 */
+    }
+  
+    .mt2 {
+      margin-top: 20px; /* 调整间距 */
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 768px) {
+    .responsiveContainer {
+      transform: scale(0.9) translateX(20px); /* 整体缩小并向右移动 */
+      margin-left: 30px; /* 添加左边距 */
+      max-width: 80%; /* 限制最大宽度 */
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1597px) {
+    .responsiveContainer {
+      transform: scale(0.9) translateX(20px); /* 整体缩小并向右移动 */
+      margin-left: 60px; /* 添加左边距 */
+      max-width: 80%; /* 限制最大宽度 */
+    }
+  }

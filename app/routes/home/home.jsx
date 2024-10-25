@@ -3,7 +3,6 @@ import Ride2 from '~/assets/Ride2.png';
 import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
 import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
 import musicSite from '~/assets/musicSite.png';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
 import foodDel from '~/assets/foodDel.png';
 import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
 import { Footer } from '~/components/footer';
@@ -18,6 +17,7 @@ import { Heading } from '~/components/heading';
 import { IconCloudDemo } from "~/components/skills/IconCloudDemo";
 import { CoolModeDemo } from '~/components/momo/CoolModeDemo';
 import { Text } from '~/components/text';
+import {SkillSet} from '~/components/skills/clipPath';
 
 
 // Prefetch draco decoader wasm
@@ -159,7 +159,7 @@ export const Home = () => {
           textures: [
             {
               srcSet: `${musicSite} 800w, ${musicSite} 1920w`,
-              placeholder: sliceTexturePlaceholder,
+              placeholder: musicSite,
             },
           ],
         }}
@@ -180,14 +180,16 @@ export const Home = () => {
   </div>
   <div className={styles.skills}>
   <Heading className={styles.skillhead}>My Skills</Heading>
-  <IconCloudDemo/>
+  <SkillSet></SkillSet>
   </div>
 
   <div className={styles.btn}>
     <CoolModeDemo/>
   </div>
       <Heading className={styles.touch}>Get In Touch</Heading>
-      <Text className={styles.subtitle}>Want to chat? Just shoot me a dm! and I'll respond whenever I can.</Text>
+      <div className={styles.mlb}>
+      <Text className={styles.subtitle}>Want to chat? Just shoot me a dm! and I will respond whenever I can.</Text>
+      </div>
       <Footer />
     </div>
   );
