@@ -42,9 +42,7 @@
     border-color: #212121;
   }
   
-  .border{
-    border: 0.3px solid #212121;  
-  }
+
   
   .grid {
     display: grid;
@@ -67,16 +65,16 @@
   }
   
   .textXl {
-    font-size: 1.25rem;
-  }
-  
-  .smText3xl {
-    font-size: 1.875rem;
-  }
-  
-  .mdText4xl {
-    font-size: 2.25rem;
-  }
+    font-size: 2rem; /* 从 1.75rem 增加到 2rem */
+}
+
+.smText3xl {
+    font-size: 2.75rem; /* 从 2.5rem 增加到 2.75rem */
+}
+
+.mdText4xl {
+    font-size: 3.5rem; /* 从 3rem 增加到 3.5rem */
+}
   
   .roundedLg {
     border-radius: 0.5rem;

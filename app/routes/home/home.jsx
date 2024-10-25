@@ -17,6 +17,7 @@ import { Heading } from '~/components/heading';
 import { CoolModeDemo } from '~/components/momo/CoolModeDemo';
 import { Text } from '~/components/text';
 import {SkillSet} from '~/components/skills/clipPath';
+import { IconCloudDemo } from '~/components/skills/IconCloudDemo';
 
 
 // Prefetch draco decoader wasm
@@ -179,7 +180,8 @@ export const Home = () => {
   </div>
   <div className={styles.skills}>
   <Heading className={styles.skillhead}>My Skills</Heading>
-  <SkillSet></SkillSet>
+    <IconCloudDemo ></IconCloudDemo>
+  {/* <SkillSet></SkillSet> */}
   </div>
 
   <div className={styles.btn}>

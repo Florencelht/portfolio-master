@@ -6,7 +6,18 @@ const slugs = [
  
 export function IconCloudDemo() {
   return (
-    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
+    <div style={{
+      position: 'relative',
+      display: 'flex',
+      width: '100%', // size-full
+      alignItems: 'center', // items-center
+      justifyContent: 'center', // justify-center
+      overflow: 'hidden', // overflow-hidden
+      paddingLeft: '5rem', // px-20
+      paddingRight: '5rem', // px-20
+      paddingBottom: '5rem', // pb-20
+      paddingTop: '2rem', // pt-8
+    }}>
       <IconCloud iconSlugs={slugs} />
     </div>
   );

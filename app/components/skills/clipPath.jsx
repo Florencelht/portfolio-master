@@ -24,7 +24,7 @@ import {
   
   const ClipPathLinks = () => {
     return (
-      <div className={`${styles.divideY} ${styles.divideNeutral900} ${styles.border} ${styles.borderNeutral900}`}> 
+      <div className={`${styles.divideY} ${styles.divideNeutral900} ${styles.borderNeutral900}`}> 
         <div className={`${styles.grid} ${styles.gridCols2} ${styles.divideX} ${styles.divideNeutral900}`}>
           <LinkBox Icon={SiCss3} />
           <LinkBox Icon={SiDocker} />
@@ -122,7 +122,7 @@ import {
           onMouseLeave={(e) => {
             handleMouseLeave(e);
           }}
-          className={`${styles.relative} ${styles.border} ${styles.grid} ${styles.placeContentCenter} ${styles.h20} ${styles.wFull}`}
+          className={`${styles.relative}  ${styles.grid} ${styles.placeContentCenter} ${styles.h20} ${styles.wFull}`}
       >
         <Icon className={`${styles.textXl} ${styles.smText3xl} ${styles.mdText4xl}`}/>
   

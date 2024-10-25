@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 import {
@@ -7,7 +5,6 @@ import {
   fetchSimpleIcons,
   renderSimpleIcon,
 } from "react-icon-cloud";
-console.log(Cloud);
 
 // Define Cloud props
 const cloudProps = {
