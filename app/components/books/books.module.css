@@ -15,6 +15,16 @@
   justify-content: center; /* Center vertically */
   position: relative; /* To position the title */
 }
+@media (max-width: 480px){
+  .box{
+    margin-left: 0px;
+    transform: scale(0.8);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: auto;
+  }
+}
+
 
 /* When the box is hovered, change its background color */
 .box:hover {

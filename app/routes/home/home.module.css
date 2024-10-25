@@ -9,6 +9,9 @@
   font-size: 60px;
 }
 
+
+
+
 .skills{
   margin-top: 40px;
 }
@@ -20,10 +23,22 @@
   font-size: 60px;
 }
 
+@media(max-width:480px){
+  .reading, .skillhead{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 30px;
+    white-space: nowrap;
+    margin-left: auto;
+  }
+}
+
 .btn{
   margin-top: 80px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .touch{
@@ -35,6 +50,7 @@
 .subtitle{
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
   font-size: 30px;
   white-space: normal; /* 允许文字换行 */
@@ -42,33 +58,35 @@
   overflow-wrap: break-word;
 }
 
+@media(max-width:480px){
+  .subtitle{
+    justify-content: flex-start;
+  }
+}
+
+@media(max-width:1024px){
+  .subtitle{
+    justify-content: center;
+    font-size: medium;
+  }
+}
+
+
+@media (min-width: 1428px) and (max-width: 1724px) {
+  .bookp{
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  }
+
+  @media (max-width: 768px) {
+    .bookp {
+      display: block; /* 更小的屏幕时设置为 'block' 布局 */
+      margin-left: 5%; /* 可以调整左右边距 */
+      margin-right: 5%;
+    }
+  }
 .mlb{
   margin-left: 20px;
-}
-
-@media (min-width: 1200px) and (max-width: 1597px) {
-  .subtitle {
-    font-size: 25px;
-  }
-}
-
-@media (min-width: 988px) and (max-width: 1200px) {
-  .subtitle {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 834px) and (max-width: 988px) {
-  .subtitle {
-    font-size: 17px;
-  }
-}
-
-@media(max-width: 834px){
-  .subtitle {
-    font-size: 17px;
-  }
-  .mlb{
-    margin-left: 100px;
-  }
 }

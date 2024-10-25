@@ -29,6 +29,8 @@
   .mxAuto {
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    align-items: center;
   }
   
   .divideY {
@@ -144,10 +146,10 @@
     }
   }
 
-  @media (min-width: 769px) and (max-width: 1597px) {
+  @media (min-width: 766px) and (max-width: 1597px) {
     .responsiveContainer {
       transform: scale(0.9) translateX(20px); /* 整体缩小并向右移动 */
-      margin-left: 60px; /* 添加左边距 */
+      margin-left: 120px; /* 添加左边距 */
       max-width: 80%; /* 限制最大宽度 */
     }
   }

@@ -170,7 +170,7 @@ export const Home = () => {
         id="details"
       />
       <Heading className={styles.reading}>Reading List</Heading>
-  <div>
+  <div className={styles.bookp}>
     <Book src="https://images-na.ssl-images-amazon.com/images/I/81kqrwS1nNL.jpg" alt="Book 1" title="JavaScript: The Good Parts" />
     <Book src="https://image.tmdb.org/t/p/original/2P31jhd1dWUAPD8dmnSrwkQ8CNN.jpg" alt="I Origins" title="I Origins" />
     <Book src="https://m.media-amazon.com/images/I/81-QB7nDh4L.jpg" alt="Book 3" title="The Lean Startup" />

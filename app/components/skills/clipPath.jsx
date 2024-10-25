@@ -26,19 +26,19 @@ import {
     return (
       <div className={`${styles.divideY} ${styles.divideNeutral900} ${styles.border} ${styles.borderNeutral900}`}> 
         <div className={`${styles.grid} ${styles.gridCols2} ${styles.divideX} ${styles.divideNeutral900}`}>
-          <LinkBox Icon={SiCss3} href="#" />
-          <LinkBox Icon={SiDocker} href="#" />
+          <LinkBox Icon={SiCss3} />
+          <LinkBox Icon={SiDocker} />
         </div>
         <div className={`${styles.grid} ${styles.gridCols4} ${styles.divideX} ${styles.divideNeutral900}`}>
-          <LinkBox Icon={SiJavascript} href="#" />
-          <LinkBox Icon={SiTsnode} href="#" />
-          <LinkBox Icon={SiReact} href="#" />
-          <LinkBox Icon={SiHtml5} href="#" />
+          <LinkBox Icon={SiJavascript} />
+          <LinkBox Icon={SiTsnode} />
+          <LinkBox Icon={SiReact}/>
+          <LinkBox Icon={SiHtml5}/>
         </div>
         <div className={`${styles.grid} ${styles.gridCols3} ${styles.divideX} ${styles.divideNeutral900}`}>
-          <LinkBox Icon={SiExpress} href="#" />
-          <LinkBox Icon={SiNodedotjs} href="#" />
-          <LinkBox Icon={SiVuedotjs} href="#" />
+          <LinkBox Icon={SiExpress}  />
+          <LinkBox Icon={SiNodedotjs} />
+          <LinkBox Icon={SiVuedotjs} />
         </div>
       </div>
     );
