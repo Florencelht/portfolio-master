@@ -64,19 +64,20 @@ export function IconCloud({ iconSlugs }) {
     fetchSimpleIcons({ slugs: iconSlugs }).then((iconsData) => {
       setData(iconsData);
       setIsReady(true); // 标记为准备就绪
-      console.log('Component mounted and data fetched');
+      console.log('Component mounted and data fetched:', iconsData);
     });
   }, [iconSlugs]);
 
   const renderedIcons = useMemo(() => {
-    if (!data) return null;
-    console.log(requestAnimationFrame);
+    if (!data || !data.simpleIcons) return null; // 确保有有效数据
+    console.log(data.simpleIcons);
 
     return Object.values(data.simpleIcons).map((icon) =>
       renderCustomIcon(icon, theme || "light")
     );
   }, [data, theme]);
   if (!isReady) return <div>Loading...</div>;
+  if (!renderedIcons) return <div>No Icons Available</div>; // 没有图标可用时的提示
   return (
     <Cloud {...cloudProps}>
       {renderedIcons}
