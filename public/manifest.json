@@ -3,8 +3,8 @@
   "name": "Design Portfolio of Florence Li",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#F2F2F2",
-  "background_color": "#F2F2F2",
+  "theme_color": "#111111",
+  "background_color": "#111111",
   "icons": [
     {
       "src": "/favicon-32x32.png",

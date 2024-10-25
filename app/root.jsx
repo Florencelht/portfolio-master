@@ -104,7 +104,7 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://img.icons8.com/?size=100&id=OeuhdvhfDwcF&format=png&color=000000" type="image/png"/>
         {/* Theme color doesn't support oklch so I'm hard coding these hexes for now */}
-        <meta name="theme-color" content={theme === 'dark' ? '#111' : '#F2F2F2'} />
+        <meta name="theme-color" content={theme === 'dark' ? '#111111' : '#F2F2F2'} />
         <meta
           name="color-scheme"
           content={theme === 'light' ? 'light dark' : 'dark light'}
@@ -146,7 +146,7 @@ export function ErrorBoundary() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://img.icons8.com/?size=100&id=OeuhdvhfDwcF&format=png&color=000000" type="image/png"/>
-        <meta name="theme-color" content="#111" />
+        <meta name="theme-color" content="#111111" />
         <meta name="color-scheme" content="dark light" />
         <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
         <Meta />
