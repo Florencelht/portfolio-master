@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState,useRef } from "react";
 import { useTheme } from "next-themes";
 import {
   Cloud,
@@ -60,6 +60,7 @@ export function IconCloud({ iconSlugs }) {
   const [data, setData] = useState(null);
   const { theme } = useTheme();
   const [isReady, setIsReady] = useState(false); // 用来管理是否准备好渲染
+  const canvasRef = useRef(null); // 创建 ref;
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then((iconsData) => {
       setData(iconsData);
@@ -67,6 +68,14 @@ export function IconCloud({ iconSlugs }) {
       console.log('Component mounted and data fetched:', iconsData);
     });
   }, [iconSlugs]);
+
+  // 监测 canvas 的状态
+  useEffect(() => {
+    if (canvasRef.current) {
+      console.log('Canvas initialized:', canvasRef.current);
+      // 可以在这里执行其他逻辑，比如检查 canvas 的尺寸
+    }
+  }, [isReady]); // 在 isReady 更新时检查
 
   const renderedIcons = useMemo(() => {
     if (!data || !data.simpleIcons) return null; // 确保有有效数据
@@ -79,9 +88,13 @@ export function IconCloud({ iconSlugs }) {
   if (!isReady) return <div>Loading...</div>;
   if (!renderedIcons) return <div>No Icons Available</div>; // 没有图标可用时的提示
   return (
-    <Cloud {...cloudProps}>
-      {renderedIcons}
-    </Cloud>
+    <div>
+      <canvas ref={canvasRef} style={{ display: 'none' }} />
+      <Cloud {...cloudProps}>
+        {renderedIcons}
+      </Cloud>
+    </div>
+    
   );
   
 }
